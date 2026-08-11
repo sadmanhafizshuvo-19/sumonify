@@ -1,0 +1,43 @@
+[
+    {
+        "id": "SF-BD-001",
+        "name": "Premium Modern Bed",
+        "category": "Bedroom",
+        "price": 25000,
+        "description": "A modern and elegant bed designed for comfortable and stylish bedrooms.",
+        "material": "MDF Board",
+        "color": "Walnut",
+        "size": "6 x 7 ft",
+        "images": [
+            "assets/images/products/bed-1.jpg"
+        ]
+    },
+
+    {
+        "id": "SF-TV-001",
+        "name": "Modern TV Cabinet",
+        "category": "Living Room",
+        "price": 18000,
+        "description": "A contemporary TV cabinet with practical storage and a clean modern design.",
+        "material": "MDF Board",
+        "color": "Walnut & White",
+        "size": "Custom",
+        "images": [
+            "assets/images/products/tv-1.jpg"
+        ]
+    },
+
+    {
+        "id": "SF-WD-001",
+        "name": "Sliding Door Wardrobe",
+        "category": "Bedroom",
+        "price": 32000,
+        "description": "A spacious sliding door wardrobe designed to maximize storage while maintaining a modern look.",
+        "material": "MDF Board",
+        "color": "Wood Finish",
+        "size": "Custom",
+        "images": [
+            "assets/images/products/wardrobe-1.jpg"
+        ]
+    }
+]
