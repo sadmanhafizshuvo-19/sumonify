@@ -178,11 +178,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 formMessage.classList.add("error");
 
 
-            submitButton.disabled = false;
+                submitButton.disabled = false;
 
-submitButton.classList.remove("loading");
+                submitButton.classList.remove("loading");
 
-submitButton.innerHTML = `
+                submitButton.innerHTML = `
     <span class="submit-text">
         Submit Project Request
     </span>

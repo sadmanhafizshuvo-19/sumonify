@@ -3042,7 +3042,7 @@ img {
 
 .portfolio-categories {
     padding: 90px 0;
-    background: #111111;
+    background: #fbfbfb;
 }
 
 .portfolio-categories .section-heading {
@@ -3124,7 +3124,9 @@ img {
     gap: 30px;
     margin-top: 50px;
 }
-
+.portfolio-projects {
+    background: #fbfbfb;
+}
 
 /* Project card */
 
@@ -3191,6 +3193,7 @@ img {
     }
 
 }
+
 
 /* ==========================================
    PROJECT VIDEO
@@ -3481,22 +3484,110 @@ img {
 
 }
 /* ==========================================
-   CONTACT PAGE
+   PROJECT DETAILS - bsckgound edit LIGHT SECTIONS
 ========================================== */
 
-.contact-section {
-    padding: 100px 0;
-    background: var(--light, #ffffff);
+/* ===== PROJECT OVERVIEW ===== */
+
+#project-details .project-overview {
+    background: #fbfbfb;
+    color: #222;
 }
 
-.contact-grid {
-    display: grid;
-    grid-template-columns: 0.85fr 1.15fr;
-    gap: 80px;
-    align-items: start;
+#project-details .project-overview .project-information h2 {
+    color: #222;
+}
+
+#project-details .project-overview .project-information p {
+    color: #555;
+}
+
+#project-details .project-overview .project-meta-item span {
+    color: #777;
+}
+
+#project-details .project-overview .project-meta-item strong {
+    color: #222;
 }
 
 
+/* ==========================================
+   PROJECT GALLERY
+========================================== */
+
+#project-details .project-gallery {
+    background: #fbfbfb;
+    color: #222;
+}
+
+#project-details .project-gallery .section-heading h2 {
+    color: #222;
+}
+
+#project-details .project-gallery .gallery-counter {
+    color: #555;
+}
+
+
+/* Gallery arrows */
+
+#project-details .project-gallery .gallery-arrow {
+    color: #222;
+    border-color: rgba(34, 34, 34, 0.25);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#project-details .project-gallery .gallery-arrow:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+}
+
+
+/* ==========================================
+   PROJECT VIDEO
+========================================== */
+
+#project-details .project-video {
+    background: #fbfbfb;
+    color: #222;
+}
+
+#project-details .project-video .section-heading h2 {
+    color: #222;
+}
+
+#project-details .project-video .section-heading p {
+    color: #555;
+}
+
+
+/* ==========================================
+   GOLD SECTION SUBTITLE
+========================================== */
+
+#project-details .project-overview .section-subtitle,
+#project-details .project-gallery .section-subtitle,
+#project-details .project-video .section-subtitle {
+    color: var(--primary);
+}
+/* ==========================================
+   PROJECT OVERVIEW - TEXT ABOVE IMAGE
+========================================== */
+
+#project-details .project-overview-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#project-details .project-information {
+    order: 1;
+}
+
+#project-details .project-main-image {
+    order: 2;
+}
 /* ==========================================
    CONTACT INFORMATION
 ========================================== */
@@ -4811,4 +4902,27 @@ input[type="file"]::file-selector-button:hover {
     }
 
 }
-/
+/* ==========================================
+   CONTACT DESKTOP LAYOUT
+========================================== */
+
+@media (min-width: 901px) {
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 70px;
+        align-items: start;
+    }
+
+    /* Contact Information → LEFT */
+    .contact-grid .contact-info {
+        order: 1;
+    }
+
+    /* Form → RIGHT */
+    .contact-grid .contact-form-wrapper {
+        order: 2;
+    }
+
+}

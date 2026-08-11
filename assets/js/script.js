@@ -478,9 +478,9 @@ if (productGrid) {
                SHOW PRODUCTS
             ----------------------------------------- */
 
-      if (filteredProducts.length === 0) {
+            if (filteredProducts.length === 0) {
 
-    productGrid.innerHTML = `
+                productGrid.innerHTML = `
 
         <div class="no-products">
 
@@ -513,9 +513,9 @@ if (productGrid) {
 
     `;
 
-    return;
+                return;
 
-}
+            }
 
             filteredProducts.forEach(product => {
 
@@ -661,5 +661,76 @@ document.addEventListener("DOMContentLoaded", function () {
         lastScrollY = currentScrollY;
 
     });
+
+});
+/* ==========================================
+   CONTACT CTA - SCROLL TO FORM
+========================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const contactForm = document.getElementById("contact-form");
+
+    /* All links that go to contact.html */
+    const contactLinks = document.querySelectorAll(
+        'a[href="contact.html"], a[href="./contact.html"]'
+    );
+
+    contactLinks.forEach(function (link) {
+
+        /* Keep Header Contact link normal */
+        if (link.closest(".navbar") || link.closest("footer")) {
+            return;
+        }
+
+        link.addEventListener("click", function (event) {
+
+            /* If already on contact page */
+            if (contactForm) {
+
+                event.preventDefault();
+
+                contactForm.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+
+            }
+
+            /* If on another page,
+               browser will go to contact.html#contact-form */
+
+            else {
+
+                event.preventDefault();
+
+                window.location.href = "contact.html#contact-form";
+
+            }
+
+        });
+
+    });
+
+
+    /* ==========================================
+       SCROLL TO FORM AFTER OPENING CONTACT PAGE
+    =========================================== */
+
+    if (
+        window.location.hash === "#contact-form" &&
+        contactForm
+    ) {
+
+        setTimeout(function () {
+
+            contactForm.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+
+        }, 300);
+
+    }
 
 });
