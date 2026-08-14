@@ -4184,7 +4184,7 @@ input[type="file"]::file-selector-button:hover {
 
 .loading-dots span {
     opacity: 0.25;
-    animation: dotBlink 1.2s infinite;
+    animation: dotBlink 1.4s infinite;
 }
 
 .loading-dots span:nth-child(2) {
@@ -4355,7 +4355,7 @@ input[type="file"]::file-selector-button:hover {
 .loading-dots span {
     opacity: 0.2;
 
-    animation: dotBlink 1.2s infinite;
+    animation: dotBlink 1.5s infinite;
 }
 
 .loading-dots span:nth-child(2) {
